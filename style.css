@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Zen Dots;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+   
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+p{
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fly 5s infinite;
+
+}
+
+@keyframes fly{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    animation: fontbulger 1s infinite ;
+    
+}
+
+@keyframes fontbulger {
+    0% {
+        bottom: 0;
+        left: 340px;
+        background: rgb(24, 138, 128);
+     }
+  
+     33% {
+        bottom: 340px;
+        left: 340px;
+        background: #c914ab;
+        color: aliceblue;
+     }
+  
+     66% {
+        bottom: 340px;
+        left: 40px;
+        background: #18aa13;
+     }
+  
+     100% {
+        bottom: 0;
+        left: 40px;
+        background: rgb(151, 35, 35);
+     }
+  }
